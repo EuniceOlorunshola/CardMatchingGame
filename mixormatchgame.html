@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="design.css" rel="stylesheet">
+  <script src="script.js" async></script>
+  
+  <title>Eunice Olorunshola FinalProject-Card Pairs Matching Game</title>
+</head>
+<body>
+<header>
+        <div class="page-header">
+            <p>Made with
+                <span aria-label="love" style="color:#D81B60;">❤</span> by Eunice Olorunshola
+                <span aria-label="message"></span> Thank you for Playing my Game.
+            </p>
+        </div>
+    </header>
+  <h1 class="page-title">Mix-it-Or-find-the-Pairs Game</h1>
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+	YOU LOST
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    YOU WON
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time: <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips: <span id="flips">0</span>
+		</div>
+      </div>
+   <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src ="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="gold.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="gold.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="red.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="red.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card  color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="green.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="green.png">
+      </div>
+    </div>
+      <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="indigo.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+       <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="indigo.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="yellow.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+         <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="yellow.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="pink.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="pink.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+       <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="pinkdots.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="pinkdots.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="orangewood.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+         <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="orangewood.jpg">
+      </div>
+	  <div class ="card">
+	  <div class ="card-back card-face">
+	  <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+	  <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="purple.png">
+      </div>
+	   <div class="card-back card-face">
+         <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+	   <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="purple.png">
+      </div>
+	  <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+	  <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="whine.png">
+      </div>
+	  <div class="card-back card-face">
+         <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+	  <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="whine.png">
+      </div>
+	  <div class="card">
+      <div class="card-back card-face">
+        <img class="color-card color-card-top-left" src="beige.png">
+        <img class="color-card color-card-top-right" src="beige.png">
+        <img class="color-card color-card-bottom-left" src="beige.png">
+        <img class="color-card color-card-bottom-right" src="beige.png">
+        <img class="skyblue" src="skyblue.png">
+      </div>
+	  <div class="card-front card-face">
+        <img class="color-card color-card-top-left" src="gray.png">
+        <img class="color-card color-card-top-right" src="gray.png">
+        <img class="color-card color-card-bottom-left" src="gray.png">
+        <img class="color-card color-card-bottom-right" src="gray.png">
+        <img class="card-value" src="brown.png">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
