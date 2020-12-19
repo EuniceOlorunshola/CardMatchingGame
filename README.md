@@ -12,4 +12,4 @@ Directions
 1. Open index.html in any current browsers
 2. Then in index.html click on the link Application Demo Video WalkThrough - Youtube
 
-Or access the video directly through the link: https://htmlpreview.github.io/?https://github.com/EuniceOlorunshola/CardMatchingGame/blob/master/index.html
+Or access the video directly through the link: https://www.youtube.com/watch?v=MiZ-56t5DU4&feature=youtu.be
